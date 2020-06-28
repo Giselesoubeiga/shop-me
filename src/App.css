@@ -1,9 +1,9 @@
 :root{
   --mainBlue:#2a2a72;
-  --lighBlue:#009ffd;
+  --lightBlue:#009ffd;
   --mainWhite:#f3f3f3;
   --mainDark:#232528;
-  -mainYellow:#ffa400;
+  --mainYellow:#ffa400;
 }
 
 body{
@@ -23,7 +23,7 @@ body{
 }
 
 .text-bright{
-  color:var(--lightBlue);
+  color: var(--lightBlue);
 }
 .navbar-brand{
   width: 50px;

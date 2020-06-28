@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import logo from "./../Shopp.jpg";
+// import logo from "./../Shopp.jpg";
 import styled from "styled-components";
 import { ButtonContainer } from './Button'
 
@@ -12,9 +12,9 @@ export default class Navbar extends Component {
 Creative Commons (Attribution 3.0 Unported);
 https://www.iconfinder.com/Makoto_msk  */}
 
-        <Link to="/">
+        {/* <Link to="/">
           <img src={logo} alt="store" className="navbar-brand"  />
-        </Link>
+        </Link> */}
         <ul className="navbar-nav align-items-center">
             <li className="nav-item ml-5">
                 <Link to="/" className="nav-link">
