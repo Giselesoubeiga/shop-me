@@ -25,7 +25,7 @@ export default class Product extends Component {
                 className="cart-btn"
                 disabled={inCart ? true : false}
                 onClick={() => {
-                  console.log("added to the cart");
+                 value.addToCart(id);
                 }}
               >
                 {inCart ? (
@@ -99,7 +99,7 @@ const ProductWrapper = styled.div`
   bottom:0;
   right:0;
   padding: 0.2rem 0.4rem;
-  background: var(--lighBlue);
+  background: var(--lightBlue);
   border:none;
   color:var(--mainWhite);
   font-size: 1.4rem;
