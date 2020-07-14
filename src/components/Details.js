@@ -7,7 +7,7 @@ export default class Details extends Component {
   render() {
     return (
       <ProductConsumer>
-        {(value) => {
+        {value => {
           const {
             id,
             company,
@@ -54,7 +54,8 @@ export default class Details extends Component {
                             </Link>
 
                             <ButtonContainer cart disabled={inCart ?true:false} onClick={()=>{
-                            value.addToCart(id)
+                            value.addToCart(id);
+                            value.openModal(id);
                         }}>
                                 {inCart ? inCart : "add to cart"}
                             </ButtonContainer>
